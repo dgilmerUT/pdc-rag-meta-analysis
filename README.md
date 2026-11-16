@@ -2,7 +2,7 @@
 
 Code and extracted data for:
 
-> Gilmer D, Walker R. *Mapping the Polymer-to-Ceramic Design Space: A Retrieval-Augmented Meta-Analysis of Preceramic Polymer Architecture and Microstructural Evolution.* (journal and DOI to be added)
+> Gilmer D, Walker R. *Mapping the Polymer to Ceramic Design Space: A Retrieval-Augmented Meta-Analysis of Preceramic Polymer Architecture and Microstructural Evolution.* (journal and DOI to be added)
 
 Preprint v1: ChemRxiv, doi:[10.26434/chemrxiv.15006390/v1](https://doi.org/10.26434/chemrxiv.15006390/v1) (949-paper corpus).
 This repository covers the expanded, deduplicated 1,763-paper corpus used in the journal version.

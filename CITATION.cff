@@ -9,7 +9,7 @@ authors:
     given-names: Roo
     affiliation: "Department of Materials Science and Engineering, University of Tennessee, Knoxville"
 license: MIT
-repository-code: ""
+repository-code: "https://github.com/dgilmerUT/pdc-rag-meta-analysis"
 keywords:
   - polymer-derived ceramics
   - preceramic polymers
@@ -18,7 +18,7 @@ keywords:
   - materials informatics
 references:
   - type: article
-    title: "Mapping the Polymer-to-Ceramic Design Space: A Retrieval-Augmented Meta-Analysis of Preceramic Polymer Architecture and Microstructural Evolution"
+    title: "Mapping the Polymer to Ceramic Design Space: A Retrieval-Augmented Meta-Analysis of Preceramic Polymer Architecture and Microstructural Evolution"
     authors:
       - family-names: Gilmer
         given-names: Dustin

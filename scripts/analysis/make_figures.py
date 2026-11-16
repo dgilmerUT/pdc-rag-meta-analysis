@@ -365,5 +365,5 @@ if __name__ == "__main__":
         "elements": elements, "pathway_cov": pathway_cov,
         "duplicate_groups": len(dups), "duplicate_redundant_records": sum(len(g) - 1 for g in dups),
     }
-    json.dump(numbers, open(OUT / "numbers.json", "w"), indent=1, default=float)
+    json.dump(numbers, open(OUT / "numbers.json", "w"), indent=1, default=float, sort_keys=True)
     print(json.dumps(numbers, indent=1, default=float))
