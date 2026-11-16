@@ -1,6 +1,6 @@
 # Data license
 
-The data files in `outputs/`, `data/`, `prompt/` and `docs/`, and the figures in `outputs/manuscript_v2/`, are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+The data files in `outputs/`, `data/` and `prompt/`, and the figures in `outputs/manuscript_v2/`, are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
 
 Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
 

@@ -1,7 +1,7 @@
 {
   "title": "PDC RAG meta-analysis: code and extracted descriptor data",
   "upload_type": "dataset",
-  "description": "Code and data for Gilmer and Walker, 'Mapping the Polymer-to-Ceramic Design Space: A Retrieval-Augmented Meta-Analysis of Preceramic Polymer Architecture and Microstructural Evolution'. Contains the LLM-extracted descriptor table for 1,763 papers on polymer-derived ceramics and benchmark ceramics, the corpus source list, the extraction prompt, the deduplication log, the validation pilot protocol, and the scripts for parsing, retrieval, extraction, statistics and figures. Code is MIT licensed; data and figures are CC BY 4.0. The copyrighted full-text corpus is not included.",
+  "description": "Code and data for Gilmer and Walker, 'Mapping the Polymer-to-Ceramic Design Space: A Retrieval-Augmented Meta-Analysis of Preceramic Polymer Architecture and Microstructural Evolution'. Contains the LLM-extracted descriptor table for 1,763 papers on polymer-derived ceramics and benchmark ceramics, the corpus source list, the extraction prompt, the deduplication logs, and the scripts for parsing, retrieval, extraction, statistics and figures. Code is MIT licensed; data and figures are CC BY 4.0. The copyrighted full-text corpus is not included.",
   "creators": [
     {"name": "Gilmer, Dustin", "affiliation": "University of Tennessee, Knoxville"},
     {"name": "Walker, Roo", "affiliation": "University of Tennessee, Knoxville"}

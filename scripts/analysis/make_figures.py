@@ -62,10 +62,6 @@ def fig1():
         rbox(0.3, y, 3.6, 0.7, "#FFF3E0", "#D2691E")
         ax.text(2.1, y + 0.35, label, fontsize=12, ha="center", va="center", color="#4E2C00")
         ax.annotate("", xy=(4.3, 5.3), xytext=(3.9, y + 0.35), arrowprops=dict(arrowstyle="->", color="#555555", lw=1.3))
-    rbox(4.3, 7.9, 11.3, 0.7, "#FFF8E1", "#CCAA44")
-    ax.text(9.95, 8.25, "Validation: 30-paper pilot vs. expert annotation — 89% phrase recall, <2% false extraction",
-            fontsize=12, ha="center", va="center", color="#5D4E00", style="italic")
-    ax.annotate("", xy=(13.8, 7.1), xytext=(13.8, 7.9), arrowprops=dict(arrowstyle="->", color="#CCAA44", lw=1.3))
     steps = [("Parse", "Docling PDF →\nstructured JSON", 4.3),
              ("Chunk", f"250 words,\n50-wd overlap\n{raw_chunks:,} chunks", 6.4),
              ("Embed", "SciBERT →\nChromaDB\n(HNSW, cosine)", 8.5),

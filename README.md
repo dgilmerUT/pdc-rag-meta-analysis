@@ -22,7 +22,6 @@ This repository covers the expanded, deduplicated 1,763-paper corpus used in the
 | `data/residual_duplicate_groups.json` | Record pairs that still share most of their chunk text after deduplication (reported in the paper). |
 | `scripts/` | The pipeline: retrieval, PDF parsing, chunking, embedding, extraction, deduplication, search. |
 | `scripts/analysis/` | Statistics (`stats_lib.py`) and figure generation (`make_figures.py`). |
-| `docs/validation_pilot/` | Annotation protocol and results of the 30-paper validation pilot. |
 
 The full-text corpus (PDFs, parsed text, chunks and the vector index) is not included because the papers are under publisher copyright.
 
@@ -62,6 +61,8 @@ Tiers: `pdc` 1,327 papers, `conventional_ceramic` 343, `application` 86, `altern
 Two unpublished documents (research proposals) were in earlier versions of the corpus, including the v1 preprint, and were removed in the second round. They are withheld from every file here; in the round-one pre-deduplication table their records are replaced by empty placeholders, so v1-corpus comparison values recomputed from this repository differ slightly from the preprint.
 
 A field counts as reported unless it is null, false or empty. The `notes` and free-text `description` fields are model-written summaries of the paper, not quotations.
+
+Extraction accuracy has not been measured against manual annotation, and individual values have not been checked by hand. The prompt asks the model to return null for anything not clearly stated, which should make omissions more common than invented values, but neither rate is known.
 
 ## Source list
 
