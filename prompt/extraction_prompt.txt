@@ -1,0 +1,89 @@
+You are an expert in preceramic polymer chemistry. Extract the following
+descriptors from the provided paper text as a JSON object with EXACTLY these fields.
+
+For any field not clearly stated in the text, use null. Do not guess or infer values that
+are not supported by the text. If a range is given, use the midpoint and note the range
+in the "notes" field.
+
+{
+  "polymer_type": "string - e.g. polysilazane, polycarbosilane, polysiloxane, polyborosilazane",
+  "polymer_name": "string - specific name/designation if given, e.g. HTT 1800, KiON Ceraset",
+
+  "elemental_composition": {
+    "Si_atomic_pct": "number or null",
+    "C_atomic_pct": "number or null",
+    "N_atomic_pct": "number or null",
+    "O_atomic_pct": "number or null",
+    "H_atomic_pct": "number or null",
+    "other_elements": "string or null - any other elements with values"
+  },
+
+  "bonding_structure": {
+    "Si_H_present": "true/false/null",
+    "Si_CH3_present": "true/false/null",
+    "N_H_present": "true/false/null",
+    "Si_N_present": "true/false/null",
+    "Si_O_present": "true/false/null",
+    "Si_C_present": "true/false/null",
+    "other_bonds": "string or null - any other notable bonds described"
+  },
+
+  "functional_groups": {
+    "vinyl": "true/false/null",
+    "methyl": "true/false/null",
+    "amine": "true/false/null",
+    "hydride": "true/false/null",
+    "other": "string or null"
+  },
+
+  "thermal_pyrolysis": {
+    "ceramic_yield_pct": "number or null - residual mass after pyrolysis",
+    "pyrolysis_temp_C": "number or null - max temperature reached",
+    "pyrolysis_atmosphere": "string or null - argon/nitrogen/vacuum/air",
+    "heating_rate_C_per_min": "number or null",
+    "hold_time_min": "number or null",
+    "tga_notes": "string or null - describe TGA behavior if interesting"
+  },
+
+  "crosslink_density": {
+    "reported": "true/false/null",
+    "value": "string or null - include units if given",
+    "crosslinking_method": "string or null - thermal/UV/chemical/catalytic"
+  },
+
+  "molecular_weight": {
+    "Mn_g_per_mol": "number or null",
+    "Mw_g_per_mol": "number or null",
+    "PDI": "number or null",
+    "measurement_method": "string or null - GPC/MALDI/etc"
+  },
+
+  "backbone_architecture": {
+    "type": "string or null - linear/branched/cyclic/cage/hyperbranched/network",
+    "description": "string or null - further details if given"
+  },
+
+  "microstructural": {
+    "ceramic_phase": "string or null - e.g. SiC, Si3N4, SiCN, SiOC, amorphous",
+    "phase_composition_notes": "string or null",
+    "grain_size_nm": "number or null",
+    "porosity_pct": "number or null"
+  },
+
+  "mechanical_properties": {
+    "hardness_GPa": "number or null",
+    "modulus_GPa": "number or null",
+    "strength_MPa": "number or null",
+    "other_mechanical": "string or null"
+  },
+
+  "conformation_crystallinity": {
+    "crystallinity_state": "string or null - amorphous/semi-crystalline/crystalline",
+    "xrd_phases_identified": "string or null",
+    "crystallite_size_nm": "number or null"
+  },
+
+  "notes": "string or null - anything important not captured above"
+}
+
+Return ONLY the JSON object, no markdown fences, no explanation before or after.

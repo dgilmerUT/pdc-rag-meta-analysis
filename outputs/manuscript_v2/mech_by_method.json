@@ -1,0 +1,42 @@
+{
+ "strength": {
+  "tensile": {
+   "n": 54,
+   "median": 1800.0
+  },
+  "compressive": {
+   "n": 51,
+   "median": 5.7
+  },
+  "not stated": {
+   "n": 27,
+   "median": 200.0
+  },
+  "multiple": {
+   "n": 21,
+   "median": 100.0
+  },
+  "flexural": {
+   "n": 82,
+   "median": 191.5
+  }
+ },
+ "hardness": {
+  "not stated": {
+   "n": 37,
+   "median": 16.2
+  },
+  "nanoindentation": {
+   "n": 16,
+   "median": 7.775
+  },
+  "Vickers/Knoop": {
+   "n": 21,
+   "median": 17.98
+  },
+  "multiple": {
+   "n": 6,
+   "median": 9.735
+  }
+ }
+}

@@ -1,0 +1,366 @@
+{
+ "tiers": {
+  "pdc": 1327,
+  "conventional_ceramic": 343,
+  "application": 86,
+  "alternative_route": 7
+ },
+ "total": 1763,
+ "raw_chunks": 319226,
+ "cat_pct": {
+  "Microstructural phase": 91,
+  "Thermal / pyrolysis": 85,
+  "Crystallinity": 78,
+  "Bonding environment": 82,
+  "Backbone architecture": 80,
+  "Crosslinking": 73,
+  "Functional groups": 75,
+  "Mechanical properties": 54,
+  "Elemental composition": 46,
+  "Molecular weight": 24
+ },
+ "cat_pct_original": {
+  "Microstructural phase": 87,
+  "Thermal / pyrolysis": 77,
+  "Crystallinity": 73,
+  "Bonding environment": 71,
+  "Backbone architecture": 68,
+  "Crosslinking": 66,
+  "Functional groups": 65,
+  "Mechanical properties": 56,
+  "Elemental composition": 34,
+  "Molecular weight": 16
+ },
+ "field_pct_original": {
+  "Ceramic phase": 83,
+  "Crystallinity state": 70,
+  "Pyrolysis atmosphere": 67,
+  "Pyrolysis temperature": 67,
+  "Crosslinking method": 65,
+  "XRD phases": 63,
+  "Backbone type": 53,
+  "Hold time": 43,
+  "Heating rate": 40,
+  "Ceramic yield": 29,
+  "Strength": 18,
+  "Porosity": 16,
+  "Grain size": 15,
+  "Elastic modulus": 12,
+  "Crystallite size": 8,
+  "Mw": 7,
+  "Hardness": 6,
+  "C content (at%)": 5,
+  "Mn": 5,
+  "Si content (at%)": 5,
+  "PDI (\u0110)": 3
+ },
+ "temp_original_median": 1200.0,
+ "yield_original_median": 74.8,
+ "original_survivors": 795,
+ "field_pct": {
+  "Ceramic phase": 88,
+  "Crystallinity state": 75,
+  "Pyrolysis atmosphere": 75,
+  "Pyrolysis temperature": 76,
+  "Crosslinking method": 73,
+  "XRD phases": 67,
+  "Backbone type": 65,
+  "Hold time": 53,
+  "Heating rate": 49,
+  "Ceramic yield": 34,
+  "Strength": 17,
+  "Porosity": 13,
+  "Grain size": 15,
+  "Elastic modulus": 12,
+  "Crystallite size": 10,
+  "Mw": 10,
+  "Hardness": 6,
+  "C content (at%)": 4,
+  "Mn": 11,
+  "Si content (at%)": 4,
+  "PDI (\u0110)": 6
+ },
+ "fam": {
+  "polysilazane": 216,
+  "polyborosilazane": 72,
+  "polycarbosilane": 267,
+  "multiple": 234,
+  "polysilsesquioxane": 17,
+  "polysiloxane": 293,
+  "polysilylcarbodiimide": 7
+ },
+ "n_typed": 1106,
+ "arch": {
+  "network": 514,
+  "branched": 27,
+  "mixed": 159,
+  "linear": 116,
+  "cyclic": 20,
+  "hyperbranched": 32
+ },
+ "temp": {
+  "n": 1012,
+  "median": 1200.0,
+  "min": 217.0,
+  "max": 2500.0,
+  "ci": [
+   1100.0,
+   1200.0
+  ],
+  "n_exact_1200": 104,
+  "n800_1200": 551,
+  "n1400_1800": 338
+ },
+ "yield": {
+  "n": 445,
+  "median": 72.2,
+  "min": 5.0,
+  "max": 98.29,
+  "ci": [
+   70.0,
+   75.0
+  ]
+ },
+ "rate": {
+  "n": 654,
+  "median": 5.0,
+  "min": 0.25,
+  "max": 3600.0,
+  "q1": 1.67,
+  "q3": 10.0
+ },
+ "atm": {
+  "argon": 592,
+  "reported": 996,
+  "air": 77,
+  "nitrogen": 373,
+  "ammonia": 66,
+  "vacuum": 36
+ },
+ "mw_test": {
+  "n_net": 227,
+  "n_lin": 55,
+  "med_net": 74.59,
+  "med_lin": 67.8,
+  "p": 0.019423792958642685,
+  "diff_ci": [
+   1.2999999999999972,
+   10.006249999999909
+  ]
+ },
+ "mw_test_original_p": 0.2605998674623825,
+ "power_shift_80": 7,
+ "xlink_method": 971,
+ "xlink_thermal_only": 122,
+ "xlink_uv": 5,
+ "xlink_density_entries": 65,
+ "mw_any": 316,
+ "mn": {
+  "n": 143,
+  "min": 74.0,
+  "max": 1300000.0,
+  "n700_2500": 96,
+  "n_gt50k": 6
+ },
+ "pdi": {
+  "n": 78,
+  "min": 1.05,
+  "max": 18.9
+ },
+ "cryst_size": {
+  "n": 131,
+  "median": 10.75,
+  "p90": 66.0,
+  "max": 143.0
+ },
+ "amorphous": 733,
+ "phase_n": 1169,
+ "phase_single": {
+  "SiCN": 62,
+  "SiC": 121,
+  "SiOC": 180,
+  "\u03b2-SiC": 30,
+  "Si\u2083N\u2084": 17,
+  "amorphous": 20
+ },
+ "porosity": {
+  "n": 171,
+  "median": 20.0,
+  "n_le40": 111,
+  "n_60_95": 36
+ },
+ "mech_any": 714,
+ "mech": {
+  "hardness": {
+   "n": 80,
+   "median": 13.9,
+   "q1": 7.5375,
+   "q3": 23.0125
+  },
+  "modulus": {
+   "n": 165,
+   "median": 104.99,
+   "q1": 51.5,
+   "q3": 220.0
+  },
+  "strength": {
+   "n": 235,
+   "median": 180.0,
+   "q1": 30.5,
+   "q3": 748.0
+  }
+ },
+ "conv_mech_n": {
+  "hardness": 37,
+  "modulus": 39,
+  "strength": 61
+ },
+ "app": {
+  "n": 86,
+  "polymer": 21,
+  "polymer_type": 21,
+  "mw": 1
+ },
+ "family_phase": [
+  [
+   "polysiloxane",
+   280,
+   [
+    88,
+    56,
+    2,
+    6,
+    0,
+    56,
+    55,
+    80
+   ]
+  ],
+  [
+   "polycarbosilane",
+   254,
+   [
+    18,
+    94,
+    2,
+    6,
+    0,
+    16,
+    28,
+    52
+   ]
+  ],
+  [
+   "polysilazane",
+   203,
+   [
+    9,
+    48,
+    70,
+    51,
+    7,
+    21,
+    35,
+    77
+   ]
+  ],
+  [
+   "polyborosilazane",
+   71,
+   [
+    0,
+    58,
+    25,
+    41,
+    56,
+    8,
+    39,
+    90
+   ]
+  ],
+  [
+   "polysilsesquioxane",
+   16,
+   [
+    75,
+    62,
+    0,
+    0,
+    0,
+    56,
+    38,
+    75
+   ]
+  ]
+ ],
+ "elements": {
+  "N": 539,
+  "C": 1097,
+  "Si": 1075,
+  "H": 253,
+  "O": 826,
+  "B": 253,
+  "Ti": 115,
+  "S": 29,
+  "Al": 134,
+  "Zr": 141,
+  "Fe": 31,
+  "Zn": 17,
+  "Ca": 16,
+  "Cu": 15,
+  "In": 1,
+  "Ga": 2,
+  "Se": 2,
+  "Co": 14,
+  "P": 22,
+  "Sn": 9,
+  "Hf": 86,
+  "Nb": 36,
+  "Cr": 14,
+  "V": 13,
+  "Mo": 24,
+  "Ta": 44,
+  "W": 19,
+  "F": 11,
+  "Cs": 5,
+  "Cl": 51,
+  "Y": 23,
+  "Mg": 19,
+  "Ba": 6,
+  "Pd": 5,
+  "Li": 26,
+  "Ni": 15,
+  "Pt": 3,
+  "La": 2,
+  "Na": 13,
+  "Sr": 2,
+  "Yb": 2,
+  "Gd": 2,
+  "Ag": 2,
+  "Au": 2,
+  "K": 6,
+  "Mn": 3,
+  "Bi": 1,
+  "Sb": 1,
+  "Er": 1,
+  "Pb": 1,
+  "Be": 1,
+  "Sc": 1
+ },
+ "pathway_cov": {
+  "Polymer identity": 84,
+  "Molecular weight": 24,
+  "Crosslinking": 73,
+  "Functional groups": 75,
+  "Thermal / pyrolysis": 85,
+  "Ceramic yield": 34,
+  "Bonding": 82,
+  "Elemental comp.": 46,
+  "Microstructure": 91,
+  "Mechanical props.": 54,
+  "Crystallinity": 78,
+  "Grain size": 15
+ },
+ "duplicate_groups": 2,
+ "duplicate_redundant_records": 2
+}

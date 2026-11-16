@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper and this archive."
+title: "PDC RAG meta-analysis: code and extracted descriptor data"
+authors:
+  - family-names: Gilmer
+    given-names: Dustin
+    affiliation: "Department of Materials Science and Engineering, University of Tennessee, Knoxville"
+  - family-names: Walker
+    given-names: Roo
+    affiliation: "Department of Materials Science and Engineering, University of Tennessee, Knoxville"
+license: MIT
+repository-code: ""
+keywords:
+  - polymer-derived ceramics
+  - preceramic polymers
+  - meta-analysis
+  - retrieval-augmented generation
+  - materials informatics
+references:
+  - type: article
+    title: "Mapping the Polymer-to-Ceramic Design Space: A Retrieval-Augmented Meta-Analysis of Preceramic Polymer Architecture and Microstructural Evolution"
+    authors:
+      - family-names: Gilmer
+        given-names: Dustin
+      - family-names: Walker
+        given-names: Roo
+    doi: 10.26434/chemrxiv.15006390/v1
+    year: 2026
