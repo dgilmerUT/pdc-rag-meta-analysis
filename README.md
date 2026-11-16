@@ -13,7 +13,7 @@ This repository covers the expanded, deduplicated 1,763-paper corpus used in the
 |---|---|
 | `outputs/descriptors.json` | The descriptor dataset: one record per paper (1,763), extracted by Claude from the paper text. This is the reference dataset for every statistic in the paper. |
 | `outputs/descriptors.csv` | The same table flattened to one column per field. |
-| `outputs/sources.csv` | Source list: the record key (`source`), tier, and DOI or bibliographic data for each paper, so the corpus can be reassembled. See "Source list" below. |
+| `outputs/sources.csv` | Source list: the record key (`source`), tier and title of every paper, with the DOI and bibliographic details for 1,462 of the 1,763 (83%), so most of the corpus can be reassembled. See "Source list" below. |
 | `prompt/extraction_prompt.txt` | The extraction schema and prompt, verbatim. |
 | `outputs/dedup_2026-10-28/` | First deduplication round (shared chunk text): the records and files removed, the duplicate groups, and the pre-deduplication descriptor table (its first 949 records are the v1 preprint corpus). |
 | `outputs/dedup_2026-11-16/` | Second round: 11 duplicate records found through shared DOIs, with the copy kept for each. |
@@ -66,14 +66,16 @@ Extraction accuracy has not been measured against manual annotation, and individ
 
 ## Source list
 
-`outputs/sources.csv` columns: `source`, `tier`, `title_guess` (from the filename or title page), `doi`, `title`, `authors`, `year`, `container`, `type`, `match`, `title_similarity`.
+`outputs/sources.csv` columns: `source`, `tier`, `title_guess` (from the filename or title page), `doi`, `title`, `authors`, `year`, `container`, `type`, `match`, `title_similarity`, `doi_candidate`, `title_candidate`.
+
+Every DOI in the `doi` column is a confirmed match. Unconfirmed guesses are kept apart in `doi_candidate` and `title_candidate`.
 
 `match` says how the bibliographic data was found:
 - `doi_in_text`: a DOI printed on the paper, confirmed on Crossref with a matching title.
 - `title_search`: a Crossref title search with a close title match.
-- `check`: a probable match not yet confirmed.
+- `check`: a probable match, not confirmed; `doi` is blank and the guess is in `doi_candidate` / `title_candidate`.
 - `manual`: entered by hand (books, theses, reports, patents).
-- `none`: not yet found.
+- `none`: no match found. These are mostly books, theses, government reports and patents, which often have no DOI; `title_guess` still identifies the paper.
 
 ## Licenses
 

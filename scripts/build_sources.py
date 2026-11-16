@@ -185,6 +185,15 @@ def main(limit=None):
         for x in sorted(xs, key=lambda x: -float(x["title_similarity"] or 0))[1:]:
             x["match"] = "check"
 
+    # only confirmed matches carry bibliographic data; an unconfirmed guess goes to the *_candidate columns
+    for x in rows:
+        x["doi_candidate"] = x["title_candidate"] = ""
+        if x["match"] == "check":
+            x["doi_candidate"], x["title_candidate"] = x["doi"], x["title"]
+            for k in ("doi", "title", "authors", "container", "type"):
+                x[k] = ""
+            x["year"] = title_guess(x["source"], [])[1] or ""
+
     CACHE.write_text(json.dumps(cache))
     with open(OUT, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]))
